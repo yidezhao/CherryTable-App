@@ -1,0 +1,75 @@
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardBackgroundColor="#EEEEEE"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="8dp">
+
+    <!-- Main Content View -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="100dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="title"
+            android:textSize="26sp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/card_fulfilled_title"
+            android:layout_width="148dp"
+            android:layout_height="26dp"
+            android:padding="4dp"
+            android:text="Fulfilled:"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/card_title">
+        </TextView>
+
+        <TextView
+            android:id="@+id/card_fulfilled"
+            android:layout_width="148dp"
+            android:layout_height="26dp"
+            android:padding="4dp"
+            android:text="fulfilled"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/card_fulfilled_title">
+        </TextView>
+
+        <TextView
+            android:id="@+id/card_target_title"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:padding="4dp"
+            android:text="Target:"
+            card_view:layout_constraintTop_toBottomOf="@id/card_title"
+            card_view:layout_constraintEnd_toEndOf="parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/card_target"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:padding="4dp"
+            android:text="target"
+            card_view:layout_constraintTop_toBottomOf="@id/card_target_title"
+            card_view:layout_constraintEnd_toEndOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/card_progress"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorPrimary"
+            card_view:layout_constraintBottom_toBottomOf="parent">
+        </View>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

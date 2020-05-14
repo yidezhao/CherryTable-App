@@ -1,0 +1,19 @@
+/* Form
+––––––––––––––––––––––––––––––––– */
+
+.donorInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  flex-direction:row;
+  height: 50px;
+  align-items: stretch;
+  flex: 1 0 25%;
+}
+
+.donorInfo > div
+{
+  flex:1 0 25%;
+  border:0px red solid;
+  text-align:left;
+}

@@ -1,0 +1,11 @@
+.donor-container .donor-header, .donor-container .donor {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 50px;
+}
+
+.header {
+  flex: 1 0 25%;
+}
+

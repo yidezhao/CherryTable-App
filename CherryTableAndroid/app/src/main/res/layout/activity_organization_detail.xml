@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.OrganizationDetailActivity">
+
+    <TextView
+        android:id="@+id/orgName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orgAddressTitle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Address:"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orgAddress"
+        app:layout_constraintTop_toBottomOf="@+id/orgName" />
+
+    <TextView
+        android:id="@+id/orgAddress"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:text="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orgAddressTitle"
+        app:layout_constraintTop_toBottomOf="@+id/orgName" />
+
+    <TextView
+        android:id="@+id/orgContactTitle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Contact:"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orgContact"
+        app:layout_constraintTop_toBottomOf="@+id/orgAddressTitle" />
+
+    <TextView
+        android:id="@+id/orgContact"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:text="Contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orgContactTitle"
+        app:layout_constraintTop_toBottomOf="@id/orgAddress" />
+
+    <TextView
+        android:id="@+id/orgDescTitle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Description:"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orgDesc"
+        app:layout_constraintTop_toBottomOf="@+id/orgContactTitle" />
+
+    <TextView
+        android:id="@+id/orgDesc"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:padding="2dp"
+        android:text="Description"
+        android:scrollbars = "vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orgDescTitle"
+        app:layout_constraintTop_toBottomOf="@+id/orgContact" />
+
+    <TextView
+        android:id="@+id/orgRequestsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:text="Requests:"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orgDesc"
+        app:layout_constraintBottom_toTopOf="@id/orgRequests"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orgRequests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orgRequestsTitle"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

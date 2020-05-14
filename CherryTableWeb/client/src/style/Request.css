@@ -1,0 +1,15 @@
+.request-container .request-header, .results-container .request {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 50px;
+}
+
+.request .title, .request-header .header-lg {
+  flex: 1 0 50%;
+}
+
+.request-header .header, .request .time, .request .amount {
+  flex: 1 0 25%;
+}
+
