@@ -18,5 +18,8 @@ This is a group project done for CIS350 Software Engineer at the University of P
 4. Run "npm start" to start the client. Website should launch automatically. If not, go to localhost:3000
 
 ## How to use the Android App
-Currently, we have not depoly the app. Download the code and open in Android Studio. You should able to run in the emulator. 
+Currently, we have not depoly the app. Download the code and open in Android Studio. You should able to run in the emulator.
+
+
+Thank you!
 
