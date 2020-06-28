@@ -1,5 +1,6 @@
 # Cheery Table
-Cheery Table aims to bring transparancy into donation and charity. We do so by letting users to track their donation history and require organization to update the status occasionally. The users can log into the Android App and make donation. The Organization can log into the web and make requests.
+Cheery Table aims to bring transparency into donation and charity. We do so by letting users track their donation history and require organizations to update their status occasionally. The users can log into the Android App and make a donation. The Organization can log into the web and make requests.
+
 
 I've contributed to this group project in several aspects: \
 For the Android app, 1. I wrote the Donation tab which tracks the status of the donation, the main feature of the app. 2. I connect everything to the MongoDB through Node.js (RESTful API). \
